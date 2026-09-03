@@ -438,6 +438,8 @@ footer .fine { color: var(--tx-soft); font-size: .82rem; margin-top: 26px; }
       <a href="#/" data-route="home">Home</a>
       <a href="#/about" data-route="about">About</a>
       <a href="#/sessions" data-route="sessions">Sessions</a>
+      <a href="#/community" data-route="community">Community</a>
+      <a href="https://quiz.thetypedtarot.com" target="_blank" rel="noopener">Free Quiz</a>
     </nav>
   </div>
 </header>
@@ -453,6 +455,8 @@ footer .fine { color: var(--tx-soft); font-size: .82rem; margin-top: 26px; }
       <a href="#/" data-route="home">Home</a>
       <a href="#/about" data-route="about">About</a>
       <a href="#/sessions" data-route="sessions">Sessions</a>
+      <a href="#/community" data-route="community">Community</a>
+      <a href="https://quiz.thetypedtarot.com" target="_blank" rel="noopener">Free Quiz</a>
     </nav>
     <div class="social">
       <a href="https://www.tiktok.com/@thetypedtarot" target="_blank" rel="noopener">TikTok · @thetypedtarot</a>
@@ -473,6 +477,14 @@ const BOOKING = {
   develop:  "https://calendar.app.google/JkSWgwMmgC2Skq9u9",
   discover: "https://calendar.app.google/R7uVgtxThWyMv4ty8"
 };
+
+/* ════════════════════════════════════════════════════════════
+   LISA: your free quiz and community links live here ⬇
+   Change either one in a single place and every button on the
+   site updates.
+   ════════════════════════════════════════════════════════════ */
+const QUIZ_URL  = "https://quiz.thetypedtarot.com";
+const SKOOL_URL = "https://www.skool.com/the-typedtarot-2608/about";
 
 /* LISA: confirm or edit the session logistics shown on the Sessions
    page. The lengths and location below are placeholders. */
@@ -532,7 +544,7 @@ const PageHome = () => `
         <p>Inside this session, Tarot and the Enneagram work together to give you a language for the pattern beneath the pattern. You leave with more than clarity. You leave with evidence your inner knowing is real.</p>
         <ul class="checks">
           <li>Name the exact pattern behind the decision you keep circling back to</li>
-          <li>Understand why you keep overriding the one voice that's actually right, yours</li>
+          <li>Understand why you keep talking yourself out of the one voice that's actually right, yours</li>
           <li>Walk away with language for the 3am spiral so it stops running you in silence</li>
         </ul>
         <div class="btn-row">
@@ -558,11 +570,39 @@ const PageHome = () => `
         </article>
         <article class="tcard lit">
           <span class="type-label">The Work</span>
-          <p>The Pattern Beneath Method lets us work with Tarot and the Enneagram. They do something together that neither does alone. The Enneagram shows you the specific way you abandon yourself. Tarot gives you a place to practice hearing your own voice before the override kicks in. Session by session, you start catching yourself sooner. The gap between knowing and trusting gets smaller.</p>
+          <p>The Pattern Beneath Method lets us work with Tarot and the Enneagram. They do something together that neither does alone. The Enneagram shows you the specific way you abandon yourself. Tarot gives you a place to practice hearing your own voice before the pattern takes over. Session by session, you start catching yourself sooner. The gap between knowing and trusting gets smaller.</p>
         </article>
         <article class="tcard">
           <span class="type-label">After</span>
-          <p>You'll still face hard decisions. You'll just stop outsourcing them. You'll know what your override sounds like, and you won't let it run the show anymore. You'll choose from your own center. Not because you're certain of the outcome, but because you're certain of yourself.</p>
+          <p>You'll still face hard decisions. You'll just stop outsourcing them. You'll recognize your pattern when you hear it, and you won't let it run the show anymore. You'll choose from your own center. Not because you're certain of the outcome, but because you're certain of yourself.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      ${eyebrow("✦ Free To Begin")}
+      <h2>Two free ways in</h2>
+      <div class="prose" style="margin-top:18px;">
+        <p>You don't have to book anything to start. Here are two places to begin recognizing your pattern, both free, both from wherever you're sitting.</p>
+      </div>
+      <div class="card-grid">
+        <article class="tcard">
+          <span class="type-label">The Quiz</span>
+          <h3 style="font-size:1.5rem; margin:10px 0 12px;">Discover Your Self-Trust Language</h3>
+          <p>The quiz is free, and it shows you which of the five Self-Trust Languages is yours. A first look in the mirror, from your couch.</p>
+          <div class="btn-row">
+            <a class="btn btn-amber" href="${QUIZ_URL}" target="_blank" rel="noopener">Take the free quiz</a>
+          </div>
+        </article>
+        <article class="tcard lit">
+          <span class="type-label">The Community</span>
+          <h3 style="font-size:1.5rem; margin:10px 0 12px;">The TypedTarot</h3>
+          <p>A free community where you get to sit with the questions that come faster than the answers, next to people who speak this language. Weekly lessons, Tarot insights, guided journaling, and live coaching.</p>
+          <div class="btn-row">
+            <a class="btn btn-amber" href="${SKOOL_URL}" target="_blank" rel="noopener">Join the community, free</a>
+          </div>
         </article>
       </div>
     </div>
@@ -630,7 +670,7 @@ const PageAbout = () => `
       <div class="frame" style="margin-top:26px;">
         <span class="type-label">✦ Together</span>
         <h3 style="font-size:1.6rem; margin:10px 0 12px;">Where they meet</h3>
-        <p>Neither tool alone does what they do together. The Enneagram shows you the specific way you override your own voice. Tarot gives you a place to practice hearing that voice before the override kicks in. One session at a time, the gap between knowing yourself and trusting yourself gets smaller.</p>
+        <p>Neither tool alone does what they do together. The Enneagram shows you the specific way you talk yourself out of your own voice. Tarot gives you a place to practice hearing that voice before the pattern takes hold. One session at a time, the gap between knowing yourself and trusting yourself gets smaller.</p>
       </div>
     </div>
   </section>
@@ -675,11 +715,11 @@ const PageSessions = () => `
       <div class="session-block frame">
         <span class="type-label">02 · My Signature Session</span>
         <h2 class="sig-title">Develop: <em>Where the Map Ends</em></h2>
-        <p>You know your type. This is where it goes to work. Tarot and the Enneagram together give you a language for the pattern beneath the pattern: the relationship that keeps replaying, the decision you can't make, the voice you keep overriding. You leave with evidence your inner knowing is real.</p>
+        <p>You know your type. This is where it goes to work. Tarot and the Enneagram together give you a language for the pattern beneath the pattern: the relationship that keeps replaying, the decision you can't make, the voice you keep talking yourself out of. You leave with evidence your inner knowing is real.</p>
         <div class="meta-row">${meta("develop")}</div>
         <ul class="checks">
           <li>Name the exact pattern behind the decision you keep circling back to</li>
-          <li>Understand why you keep overriding the one voice that's actually right, yours</li>
+          <li>Understand why you keep talking yourself out of the one voice that's actually right, yours</li>
           <li>Walk away with language for the 3am spiral so it stops running you in silence</li>
         </ul>
         <div class="btn-row">
@@ -701,12 +741,49 @@ const PageSessions = () => `
   </section>
 `;
 
+const PageCommunity = () => `
+  <div class="page-head">
+    <div class="wrap">
+      ${eyebrow("Community")}
+      <h1>The TypedTarot</h1>
+      <p class="lede">See the pattern. Change the story. A free community for the work between sessions.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="frame">
+        <span class="type-label">✦ Free to join</span>
+        <h2 class="sig-title">Where the practice keeps going</h2>
+        <p>You've read your type's description more times than you'll admit, and the questions still come faster than the answers. The TypedTarot is a free community where you get to sit with those questions next to people who already speak this language. I share weekly lessons, Tarot insights, and guided journaling, and we meet for live coaching, so seeing your pattern becomes something you practice together, instead of something you do alone at 3am.</p>
+        <p>Come as you are. It's a space for thoughtful questions, honest reflection, and steady company while you practice.</p>
+        <div class="btn-row">
+          <a class="btn btn-amber" href="${SKOOL_URL}" target="_blank" rel="noopener">Join the community, free</a>
+          <a class="btn btn-ghost" href="${QUIZ_URL}" target="_blank" rel="noopener">Take the free quiz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="interlude">
+    <div class="wrap">
+      ${rule}
+      <p class="bigquote">You don't have to figure it out alone.</p>
+      <div class="btn-row">
+        <a class="btn btn-amber" href="${SKOOL_URL}" target="_blank" rel="noopener">Join the community</a>
+        <a class="btn btn-ghost" href="#/sessions">See the sessions</a>
+      </div>
+    </div>
+  </section>
+`;
+
 /* ── router ────────────────────────────────────────────── */
 
 const routes = {
-  home:     PageHome,
-  about:    PageAbout,
-  sessions: PageSessions
+  home:      PageHome,
+  about:     PageAbout,
+  sessions:  PageSessions,
+  community: PageCommunity
 };
 
 function currentRoute() {
