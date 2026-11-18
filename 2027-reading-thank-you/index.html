@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<title>One More Step | TheTypedTarot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme]{--bg:#F5F0EB;--panel:#EDE7D9;--tx:#463C32;--tx-strong:#2C2621;--tx-soft:#7C7060;--acc:#C28A46;--acc-tx:#96682B;--grn:#5B6655;--line:#CFC6B4;--tape:rgba(194,138,70,.28);
+--serif:'Cormorant Garamond','Palatino Linotype',Georgia,serif;--typed:'Special Elite','Courier New',monospace;--body:'Lora','Palatino Linotype',Palatino,Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#F5F0EB;--panel:#EDE7D9;--tx:#463C32;--tx-strong:#2C2621}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main{max-width:700px;margin:0 auto;padding:48px 22px 72px}
+.eyebrow{font:13px var(--typed);letter-spacing:.08em;text-transform:uppercase;color:var(--acc-tx);display:flex;align-items:center;gap:10px}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+h1{font:600 50px/1.06 var(--serif);color:var(--tx-strong);margin:14px 0 14px}
+h2{font:600 32px/1.15 var(--serif);color:var(--tx-strong);margin:0 0 12px}
+p{margin:0 0 14px}
+.lead{font-size:19px}
+.card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:2px;padding:26px;margin:30px 0;box-shadow:inset 0 0 0 5px var(--panel),inset 0 0 0 6px var(--line),0 2px 6px rgba(44,38,33,.08)}
+.card.moss{border-top-color:var(--grn)}
+.btn{display:inline-block;background:var(--acc);color:#fff;font:15px var(--typed);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 24px;border-radius:2px}
+.btn:hover{background:var(--acc-tx)}
+.price{font:600 44px/1 var(--serif);color:var(--tx-strong);margin:4px 0 6px}
+.small{font-size:14px;color:var(--tx-soft)}
+ul.marks{list-style:none;padding:0;margin:10px 0 0}
+ul.marks li{position:relative;padding-left:24px;margin-bottom:10px}
+ul.marks li::before{content:"\2726";position:absolute;left:0;top:0;color:var(--acc)}
+ol.steps{list-style:none;padding:0;margin:18px 0 0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding-left:46px;margin-bottom:16px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:-8px;font:600 34px var(--serif);color:var(--acc)}
+ol.steps strong,ul.marks strong{color:var(--tx-strong)}
+a{color:var(--acc-tx)}
+.rule{display:flex;align-items:center;gap:12px;margin:40px 0;color:var(--acc)}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:var(--line)}
+.note{position:relative;background:#FBF8F3;border:1px solid var(--line);padding:20px 22px;margin:28px 0;transform:rotate(-.4deg)}
+.note::before{content:"";position:absolute;top:-10px;left:50%;width:90px;height:20px;margin-left:-45px;background:var(--tape);transform:rotate(2deg)}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;color:var(--tx-strong)}
+details p{margin:10px 0 0}
+footer{font:12px var(--typed);color:var(--tx-soft);letter-spacing:.06em;text-transform:uppercase;border-top:1px solid var(--line);padding-top:14px;margin-top:48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:560px){h1{font-size:40px}.note{transform:none}}
+
+.opts{display:grid;gap:18px;margin:26px 0}
+.opt{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:2px;padding:24px 26px;box-shadow:inset 0 0 0 5px var(--panel),inset 0 0 0 6px var(--line),0 2px 6px rgba(44,38,33,.08)}
+.opt.moss{border-top-color:var(--grn)}
+.opt .price{font-size:40px}
+.opt h3{font:600 26px/1.15 var(--serif);color:var(--tx-strong);margin:0 0 4px}
+.qs{margin:16px 0 0;padding:0;list-style:none}
+.qs li{margin:0 0 12px;padding-left:0}
+.qs .when{font:12px var(--typed);letter-spacing:.08em;text-transform:uppercase;color:var(--acc-tx);display:block}
+
+label{display:block;font-weight:600;color:var(--tx-strong);margin:22px 0 4px}
+.hint{font-size:14px;color:var(--tx-soft);margin:0 0 8px}
+input[type=text],select,textarea{width:100%;font:17px/1.5 var(--body);color:var(--tx-strong);background:#FBF8F3;border:1px solid var(--line);border-radius:2px;padding:11px 12px}
+textarea{min-height:110px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.err{color:#8A3B2A;font-size:15px;margin:12px 0 0;min-height:1em}
+.btn{border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--acc-tx);border:1px solid var(--acc)}
+#fallback{display:none}
+#fallback textarea{min-height:240px;font-size:15px}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">&#10022; Thank you for your order</div>
+  <h1>One more step: tell me about your pattern.</h1>
+  <p>Thank you for ordering Your 2027 Reading by Enneagram Type. I need a few answers before I pull your cards. Plain sentences are all I need.</p>
+
+  <div class="card moss" id="bundle" style="display:none">
+    <div class="eyebrow">&#10022; Your workbook</div>
+    <h2 style="margin-top:12px">Find Your Enneagram Type: Workbook</h2>
+    <p>Download it below, fill it out on your own time, and email it to <a href="mailto:lisa@thetypedtarot.com?subject=My%20Find%20Your%20Enneagram%20Type%20Workbook">lisa@thetypedtarot.com</a>. A saved copy, a scan, or clear photos of your pages all work. I write back within two business days with your working type, and I read your cards against it.</p>
+    <a class="btn" href="/workbook-thank-you/Find-Your-Enneagram-Type-Workbook.pdf" download>Download the workbook</a>
+    <p class="small" style="margin-top:14px">On a phone, open the file in Adobe Acrobat Reader or your Files app so your answers save. You can send the form below now. For your working type, choose the last option in the list.</p>
+  </div>
+
+  <div class="card">
+    <h2>Your answers</h2>
+    <form id="intake" novalidate>
+      <label for="name">Your first name</label>
+      <p class="hint">This goes at the top of your reading.</p>
+      <input type="text" id="name" autocomplete="given-name" maxlength="60">
+
+      <label for="type">Your working type</label>
+      <p class="hint">The type you think fits you best right now.</p>
+      <select id="type">
+        <option value="">Choose one</option>
+        <option>Type 1, The Reformer</option>
+        <option>Type 2, The Helper</option>
+        <option>Type 3, The Achiever</option>
+        <option>Type 4, The Individualist</option>
+        <option>Type 5, The Investigator</option>
+        <option>Type 6, The Loyalist</option>
+        <option>Type 7, The Enthusiast</option>
+        <option>Type 8, The Challenger</option>
+        <option>Type 9, The Peacemaker</option>
+        <option>I am between two types</option>
+        <option>I bought the workbook and am waiting for your feedback</option>
+      </select>
+
+      <label for="two">If you are between two types, which two?</label>
+      <input type="text" id="two" maxlength="80">
+
+      <label for="pattern">Where do you keep getting stuck?</label>
+      <p class="hint">Describe what you keep doing, or keep putting off, even though you know what you would like to do instead.</p>
+      <textarea id="pattern" maxlength="500"></textarea>
+
+      <label for="goal">What do you want from 2027?</label>
+      <p class="hint">A sentence or two on what you would like to be different by the end of the year.</p>
+      <textarea id="goal" maxlength="700"></textarea>
+
+      <label for="extra">Anything else you want me to know before I read your cards?</label>
+      <p class="hint">Optional.</p>
+      <textarea id="extra" maxlength="400" style="min-height:80px"></textarea>
+
+      <p class="err" id="err" role="alert"></p>
+      <button class="btn" type="submit">Prepare my email to Lisa</button>
+      <p class="small" style="margin-top:14px">This opens an email to me with your answers filled in. Press send, and they come straight to me. Nobody else sees them.</p>
+    </form>
+
+    <div id="fallback">
+      <div class="rule">&#10022;</div>
+      <h2>Did your email app open?</h2>
+      <p>If it did, press send. If it did not, copy the text below and email it to <a href="mailto:lisa@thetypedtarot.com">lisa@thetypedtarot.com</a>.</p>
+      <textarea id="copy" readonly></textarea>
+      <button class="btn ghost" type="button" id="copybtn" style="margin-top:10px">Copy my answers</button>
+      <span class="small" id="copied" style="margin-left:10px"></span>
+    </div>
+  </div>
+
+  <h2>What happens next</h2>
+  <ol class="steps">
+    <li><strong>You send me your answers.</strong> They arrive in my email.</li>
+    <li><strong>I pull and read your cards</strong> on my own time.</li>
+    <li><strong>I email you a link and a password</strong> by the first week of January 2027.</li>
+  </ol>
+
+  <p class="small" style="margin-top:28px">Questions about your order? Email <a href="mailto:lisa@thetypedtarot.com">lisa@thetypedtarot.com</a>.</p>
+
+  <footer><span>TheTypedTarot</span><a href="https://www.thetypedtarot.com">www.thetypedtarot.com</a></footer>
+</main>
+<script>
+(function(){
+  try{ if(new URLSearchParams(location.search).get('bundle')==='1') document.getElementById('bundle').style.display='block'; }catch(e){}
+  var f=document.getElementById('intake');
+  function v(id){return (document.getElementById(id).value||'').replace(/\s+$/,'').replace(/^\s+/,'');}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var err=document.getElementById('err'); err.textContent='';
+    var need=[['name','your first name'],['type','your working type'],['pattern','where you keep getting stuck'],['goal','what you want from 2027']];
+    for(var i=0;i<need.length;i++){ if(!v(need[i][0])){ err.textContent='Please add '+need[i][1]+'.'; document.getElementById(need[i][0]).focus(); return; } }
+    var lines=['First name: '+v('name'),'','Working type: '+v('type')];
+    if(v('two')) lines.push('Between these two types: '+v('two'));
+    lines.push('','Where I keep getting stuck:',v('pattern'),'','What I want from 2027:',v('goal'));
+    if(v('extra')) lines.push('','Anything else:',v('extra'));
+    var body=lines.join('\n');
+    var subject='2027 Reading answers from '+v('name');
+    document.getElementById('copy').value=body;
+    document.getElementById('fallback').style.display='block';
+    window.location.href='mailto:lisa@thetypedtarot.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  });
+  document.getElementById('copybtn').addEventListener('click',function(){
+    var t=document.getElementById('copy'); t.select();
+    var done=function(){document.getElementById('copied').textContent='Copied.';};
+    try{ if(navigator.clipboard){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand('copy');done();});} else {document.execCommand('copy');done();} }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>

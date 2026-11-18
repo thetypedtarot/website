@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Your 2027 Reading by Enneagram Type | TheTypedTarot</title>
+<meta name="description" content="A written year-ahead reading, read against your Enneagram type. Five cards on your pattern, then one card for each month of 2027, on your own password-locked page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Lora:ital,wght@0,400;0,600;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme]{--bg:#F5F0EB;--panel:#EDE7D9;--tx:#463C32;--tx-strong:#2C2621;--tx-soft:#7C7060;--acc:#C28A46;--acc-tx:#96682B;--grn:#5B6655;--line:#CFC6B4;--tape:rgba(194,138,70,.28);
+--serif:'Cormorant Garamond','Palatino Linotype',Georgia,serif;--typed:'Special Elite','Courier New',monospace;--body:'Lora','Palatino Linotype',Palatino,Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#F5F0EB;--panel:#EDE7D9;--tx:#463C32;--tx-strong:#2C2621}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.65 var(--body)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+main{max-width:700px;margin:0 auto;padding:48px 22px 72px}
+.eyebrow{font:13px var(--typed);letter-spacing:.08em;text-transform:uppercase;color:var(--acc-tx);display:flex;align-items:center;gap:10px}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--line)}
+h1{font:600 50px/1.06 var(--serif);color:var(--tx-strong);margin:14px 0 14px}
+h2{font:600 32px/1.15 var(--serif);color:var(--tx-strong);margin:0 0 12px}
+p{margin:0 0 14px}
+.lead{font-size:19px}
+.card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:2px;padding:26px;margin:30px 0;box-shadow:inset 0 0 0 5px var(--panel),inset 0 0 0 6px var(--line),0 2px 6px rgba(44,38,33,.08)}
+.card.moss{border-top-color:var(--grn)}
+.btn{display:inline-block;background:var(--acc);color:#fff;font:15px var(--typed);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 24px;border-radius:2px}
+.btn:hover{background:var(--acc-tx)}
+.price{font:600 44px/1 var(--serif);color:var(--tx-strong);margin:4px 0 6px}
+.small{font-size:14px;color:var(--tx-soft)}
+ul.marks{list-style:none;padding:0;margin:10px 0 0}
+ul.marks li{position:relative;padding-left:24px;margin-bottom:10px}
+ul.marks li::before{content:"\2726";position:absolute;left:0;top:0;color:var(--acc)}
+ol.steps{list-style:none;padding:0;margin:18px 0 0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding-left:46px;margin-bottom:16px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:-8px;font:600 34px var(--serif);color:var(--acc)}
+ol.steps strong,ul.marks strong{color:var(--tx-strong)}
+a{color:var(--acc-tx)}
+.rule{display:flex;align-items:center;gap:12px;margin:40px 0;color:var(--acc)}
+.rule::before,.rule::after{content:"";flex:1;height:1px;background:var(--line)}
+.note{position:relative;background:#FBF8F3;border:1px solid var(--line);padding:20px 22px;margin:28px 0;transform:rotate(-.4deg)}
+.note::before{content:"";position:absolute;top:-10px;left:50%;width:90px;height:20px;margin-left:-45px;background:var(--tape);transform:rotate(2deg)}
+details{border-top:1px solid var(--line);padding:14px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;color:var(--tx-strong)}
+details p{margin:10px 0 0}
+footer{font:12px var(--typed);color:var(--tx-soft);letter-spacing:.06em;text-transform:uppercase;border-top:1px solid var(--line);padding-top:14px;margin-top:48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media (max-width:560px){h1{font-size:40px}.note{transform:none}}
+
+.opts{display:grid;gap:18px;margin:26px 0}
+.opt{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--acc);border-radius:2px;padding:24px 26px;box-shadow:inset 0 0 0 5px var(--panel),inset 0 0 0 6px var(--line),0 2px 6px rgba(44,38,33,.08)}
+.opt.moss{border-top-color:var(--grn)}
+.opt .price{font-size:40px}
+.opt h3{font:600 26px/1.15 var(--serif);color:var(--tx-strong);margin:0 0 4px}
+.qs{margin:16px 0 0;padding:0;list-style:none}
+.qs li{margin:0 0 12px;padding-left:0}
+.qs .when{font:12px var(--typed);letter-spacing:.08em;text-transform:uppercase;color:var(--acc-tx);display:block}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">&#10022; TheTypedTarot &middot; Founding Year</div>
+  <h1>Your 2027 Reading by Enneagram Type</h1>
+  <p class="lead">You can probably name the thing you keep doing, or keep putting off, even though you know what you would like to do instead.</p>
+  <p>This is a written reading for the year ahead. I pull the cards, read them against your Enneagram type, and show you where your pattern may appear in 2027 and what you can do when it does. You get five cards on your pattern, then one card for each month, with space to write your own answers.</p>
+  <a class="btn" href="https://buy.stripe.com/14A5kDdee2Y41PV3GrfYY02" data-stripe="reading-50">Get the reading for $50</a>
+  <p class="small" style="margin-top:12px">Founding Year price. I am doing 25 readings, and they arrive by the first week of January 2027.</p>
+
+  <div class="rule">&#10022;</div>
+
+  <h2>This is for you if</h2>
+  <ul class="marks">
+    <li>You know your Enneagram type, or you have a working type you are fairly sure of.</li>
+    <li>You can describe a pattern you keep repeating, and you would like to see it laid out across the whole year.</li>
+    <li>You want something you can come back to every month and write in.</li>
+    <li>You are new to the Enneagram. Your reading includes a short section on your type, in plain language.</li>
+  </ul>
+
+  <div class="card">
+    <h2>What you get</h2>
+    <ul class="marks">
+      <li><strong>Your pattern and your goal.</strong> The reading opens with both, side by side, so everything after it is read against them.</li>
+      <li><strong>A short section on your type.</strong> Your core fear, your core desire, where you struggle, and where you succeed.</li>
+      <li><strong>Five pattern cards.</strong> The pattern you are carrying into 2027, where you may see it happening, what it is protecting, the invitation, and the card for the year. Each one is read against your type, with your goal beside it.</li>
+      <li><strong>Twelve monthly cards, January to December.</strong> Each month has the card, how it reads against your type, and a place to reflect.</li>
+      <li><strong>Three questions for every month,</strong> with room to write under each one.</li>
+      <li><strong>Your own page, locked with a password.</strong> You can come back to it all year.</li>
+    </ul>
+  </div>
+
+  <h2>How each month works</h2>
+  <p>Every month ends with the same three questions, so you can see your pattern change over the year.</p>
+  <ul class="qs">
+    <li><span class="when">Before the month</span>Where is my pattern most likely to show up this month?</li>
+    <li><span class="when">During the month</span>Where am I standing in my pattern right now?</li>
+    <li><span class="when">After the month</span>What did I do differently this month, even once?</li>
+  </ul>
+
+  <div class="rule">&#10022;</div>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><strong>Choose your option below and pay.</strong></li>
+    <li><strong>Answer a few short questions on the next page.</strong> I ask for your first name, your working type, the pattern you keep repeating, and what you want from 2027.</li>
+    <li><strong>I pull and read your cards on my own time.</strong> There is no live session.</li>
+    <li><strong>I email you a link and a password</strong> by the first week of January 2027. I am aiming to send most of them by New Year's Day.</li>
+  </ol>
+
+  <div class="rule">&#10022;</div>
+
+  <h2>Choose your option</h2>
+  <div class="opts">
+    <div class="opt">
+      <h3>The reading</h3>
+      <div class="price">$50</div>
+      <p>For you if you already know your working type.</p>
+      <a class="btn" href="https://buy.stripe.com/14A5kDdee2Y41PV3GrfYY02" data-stripe="reading-50">Get the reading</a>
+    </div>
+    <div class="opt moss">
+      <h3>The reading + the workbook</h3>
+      <div class="price">$65</div>
+      <p>For you if you are not sure of your type yet. You get Find Your Enneagram Type: Workbook. You send it back, and my written feedback names your working type before I read your cards.</p>
+      <p>Discover: The Map + The Mirror is included free when you book by January 31, 2027. This year only.</p>
+      <a class="btn" href="https://buy.stripe.com/fZu9ATb66cyEdyDa4PfYY03" data-stripe="bundle-65">Get the reading + workbook</a>
+    </div>
+  </div>
+  <p class="small">Already bought the workbook? <a href="https://buy.stripe.com/6oU7sL6PQaqwfGL2CnfYY01">Add the reading for $40</a>. Your total is $65, and your Discover: The Map + The Mirror session is free when you book by January 31, 2027.</p>
+
+  <div class="rule">&#10022;</div>
+
+  <h2>Who reads your cards</h2>
+  <p>I'm Lisa, a certified Enneagram coach through The Enneagram University and a certified Tarot reader. I founded TheTypedTarot to help women see the patterns they keep repeating, using The Pattern Beneath Method. In this reading, your Enneagram type shows the shape of your pattern, and the cards show where you are standing in it this year.</p>
+
+  <h2 style="margin-top:34px">Questions</h2>
+  <details><summary>Do I need to know my Enneagram type?</summary><p>A working type is enough. If you do not have one yet, choose the reading + workbook option. My written feedback names your working type before I read your cards.</p></details>
+  <details><summary>What if I am between two types?</summary><p>The reading + workbook option is the best fit. If you would rather go ahead now, tell me both types on the form. I read against the stronger one, and your page says it is a working type.</p></details>
+  <details><summary>Does the reading predict what will happen in 2027?</summary><p>No. The cards show what is possible. The reading shows where your pattern may appear and what you can do when it does.</p></details>
+  <details><summary>Do I pull the cards?</summary><p>I pull and read them for you, on my own time.</p></details>
+  <details><summary>When will I get my reading?</summary><p>By the first week of January 2027. I am aiming to send most of them by New Year's Day.</p></details>
+  <details><summary>How many readings are there?</summary><p>I am doing 25 readings for 2027.</p></details>
+  <details><summary>Who can see my reading?</summary><p>Only people who have your password. The page stays unreadable without it.</p></details>
+  <details><summary>Where are my notes saved?</summary><p>On the device you write them on. If you switch to a different phone or computer, your notes stay on the first one. To keep a copy, print the page, and your typed notes print with it.</p></details>
+  <details><summary>Questions about your order?</summary><p>Email me at <a href="mailto:lisa@thetypedtarot.com">lisa@thetypedtarot.com</a>.</p></details>
+
+  <footer><span>TheTypedTarot</span><a href="https://www.thetypedtarot.com">www.thetypedtarot.com</a></footer>
+</main>
+</body>
+</html>
