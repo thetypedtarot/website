@@ -335,6 +335,28 @@ section + section { border-top: 1px solid var(--line); }
 .interlude .sub { color: var(--tx-soft); max-width: 46ch; margin: 0 auto; }
 .interlude .btn-row { justify-content: center; }
 
+/* ── testimonials ───────────────────────────────────────── */
+.quote-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 34px; }
+.quote-grid.solo { grid-template-columns: minmax(0, 720px); }
+.tquote {
+  margin: 0;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--acc);
+  box-shadow: inset 0 0 0 5px var(--panel), inset 0 0 0 6px var(--line), 2px 4px 12px var(--shadow);
+  padding: 34px clamp(24px, 4vw, 40px) 28px;
+}
+.tquote .mark { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 3.4rem; line-height: .6; color: var(--acc); display: block; height: 22px; }
+.tquote blockquote { margin: 0; }
+.tquote blockquote p {
+  font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500;
+  font-size: 1.32rem; line-height: 1.45; color: var(--tx-strong); max-width: none;
+}
+.tquote figcaption { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; }
+.tquote .who { font-family: 'Special Elite', 'Courier New', monospace; font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: var(--tx-strong); }
+.tquote .what { font-size: .9rem; color: var(--tx-soft); }
+.tquote .what a { color: var(--acc-tx); }
+
 /* ── the map + the mirror (about) ───────────────────────── */
 .mod-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 34px; }
 .mod {
@@ -494,6 +516,22 @@ const SESSION_META = {
 };
 const meta = (which) => SESSION_META[which].map(m => `<span class="chip">${m}</span>`).join("");
 
+/* ════════════════════════════════════════════════════════════
+   LISA: YOUR TESTIMONIALS LIVE HERE ⬇
+   To add a new one, copy a block from { to }, paste it below
+   the last one, and change the words. The Home page shows
+   every testimonial in this list, newest at the bottom.
+   "link" is optional: leave it as "" if there is no page.
+   ════════════════════════════════════════════════════════════ */
+const TESTIMONIALS = [
+  {
+    name:  "Sunny",
+    offer: "Your 2027 Reading by Enneagram Type",
+    link:  "/2027-reading/",
+    quote: "I got my 2027 reading by Enneagram type from Lisa at TheTypedTarot. She reads each card against your type and your goal for the year, and the whole reading is detailed and so well laid out. It helped me understand my card of the year and gave me a clear focus for 2027. Each month has its own card and journal questions, so I'll be coming back to it all year."
+  }
+];
+
 /* ── shared components ─────────────────────────────────── */
 
 const ENNEA_SVG = (cls) => `
@@ -517,6 +555,27 @@ const eyebrow = (text) => `
 
 const bookBtn = (which, label) => `
   <a class="btn btn-amber" href="${BOOKING[which]}" target="_blank" rel="noopener">${label}</a>`;
+
+const quoteCard = (t) => `
+  <figure class="tquote">
+    <span class="mark" aria-hidden="true">&ldquo;</span>
+    <blockquote><p>${t.quote}</p></blockquote>
+    <figcaption>
+      <span class="who">${t.name}</span>
+      <span class="what">${t.link ? `<a href="${t.link}">${t.offer}</a>` : t.offer}</span>
+    </figcaption>
+  </figure>`;
+
+const testimonialSection = () => TESTIMONIALS.length ? `
+  <section>
+    <div class="wrap">
+      ${eyebrow("✦ Kind Words")}
+      <h2>From the women I've read for</h2>
+      <div class="quote-grid${TESTIMONIALS.length === 1 ? " solo" : ""}">
+        ${TESTIMONIALS.map(quoteCard).join("")}
+      </div>
+    </div>
+  </section>` : "";
 
 /* ── pages ─────────────────────────────────────────────── */
 
@@ -607,6 +666,8 @@ const PageHome = () => `
       </div>
     </div>
   </section>
+
+  ${testimonialSection()}
 
   <section class="interlude">
     <div class="wrap">
