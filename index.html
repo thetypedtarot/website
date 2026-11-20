@@ -356,6 +356,7 @@ section + section { border-top: 1px solid var(--line); }
 .tquote .who { font-family: 'Special Elite', 'Courier New', monospace; font-size: .85rem; letter-spacing: .2em; text-transform: uppercase; color: var(--tx-strong); }
 .tquote .what { font-size: .9rem; color: var(--tx-soft); }
 .tquote .what a { color: var(--acc-tx); }
+.tquote .note { flex-basis: 100%; font-style: italic; font-size: .92rem; color: var(--tx); }
 
 /* ── the map + the mirror (about) ───────────────────────── */
 .mod-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; margin-top: 34px; }
@@ -435,7 +436,8 @@ footer .social {
 }
 footer .social a { color: var(--tx-soft); text-decoration: none; }
 footer .social a:hover { color: var(--acc-tx); }
-footer .fine { color: var(--tx-soft); font-size: .82rem; margin-top: 26px; }
+footer .fine { color: var(--tx-soft); font-size: .82rem; margin: 26px auto 0; }
+footer .fine a { color: var(--tx-soft); }
 
 /* ── responsive ─────────────────────────────────────────── */
 @media (max-width: 820px) {
@@ -487,7 +489,8 @@ footer .fine { color: var(--tx-soft); font-size: .82rem; margin-top: 26px; }
       <a href="https://www.tiktok.com/@thetypedtarot" target="_blank" rel="noopener">TikTok · @thetypedtarot</a>
       <a href="https://www.instagram.com/thetypedtarot" target="_blank" rel="noopener">Instagram · @thetypedtarot</a>
     </div>
-    <p class="fine">© 2026 TheTypedTarot ✦ where personality meets pattern</p>
+    <p class="fine"><a href="mailto:lisa@thetypedtarot.com">lisa@thetypedtarot.com</a> ✦ <a href="/policies/">Policies</a></p>
+    <p class="fine" style="margin-top:8px;">© 2026 TheTypedTarot ✦ where personality meets pattern</p>
   </div>
 </footer>
 
@@ -525,12 +528,15 @@ const meta = (which) => SESSION_META[which].map(m => `<span class="chip">${m}</s
    the last one, and change the words. The Home page shows
    every testimonial in this list, newest at the bottom.
    "link" is optional: leave it as "" if there is no page.
+   "note": if this person got the work free or at a discount
+   (a tester), say so here. The FTC requires it. Otherwise "".
    ════════════════════════════════════════════════════════════ */
 const TESTIMONIALS = [
   {
     name:  "Sunny",
     offer: "Your 2027 Reading by Enneagram Type",
     link:  "/2027-reading/",
+    note:  "Sunny received her reading as a tester.",
     quote: "I got my 2027 reading by Enneagram type from Lisa at TheTypedTarot. She reads each card against your type and your goal for the year, and the whole reading is detailed and so well laid out. It helped me understand my card of the year and gave me a clear focus for 2027. Each month has its own card and journal questions, so I'll be coming back to it all year."
   }
 ];
@@ -566,6 +572,7 @@ const quoteCard = (t) => `
     <figcaption>
       <span class="who">${t.name}</span>
       <span class="what">${t.link ? `<a href="${t.link}">${t.offer}</a>` : t.offer}</span>
+      ${t.note ? `<span class="note">${t.note}</span>` : ""}
     </figcaption>
   </figure>`;
 
