@@ -1,4 +1,4 @@
-<title>TheTypedTarot ✦ Where personality meets prophecy</title>
+<title>TheTypedTarot ✦ Where personality meets pattern</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -440,6 +440,7 @@ footer .fine { color: var(--tx-soft); font-size: .82rem; margin-top: 26px; }
 /* ── responsive ─────────────────────────────────────────── */
 @media (max-width: 820px) {
   section { padding: 58px 0; }
+  nav { flex-wrap: wrap; gap: 8px 20px; }
   .card-grid, .mod-grid, .about-intro { grid-template-columns: 1fr; }
   .photo-slot { max-width: 300px; }
   .tcard:nth-child(odd), .tcard:nth-child(even) { transform: none; }
@@ -461,6 +462,7 @@ footer .fine { color: var(--tx-soft); font-size: .82rem; margin-top: 26px; }
       <a href="#/about" data-route="about">About</a>
       <a href="#/sessions" data-route="sessions">Sessions</a>
       <a href="#/community" data-route="community">Community</a>
+      <a href="/2027-reading/">2027 Reading</a>
       <a href="https://quiz.thetypedtarot.com" target="_blank" rel="noopener">Free Quiz</a>
     </nav>
   </div>
@@ -478,13 +480,14 @@ footer .fine { color: var(--tx-soft); font-size: .82rem; margin-top: 26px; }
       <a href="#/about" data-route="about">About</a>
       <a href="#/sessions" data-route="sessions">Sessions</a>
       <a href="#/community" data-route="community">Community</a>
+      <a href="/2027-reading/">2027 Reading</a>
       <a href="https://quiz.thetypedtarot.com" target="_blank" rel="noopener">Free Quiz</a>
     </nav>
     <div class="social">
       <a href="https://www.tiktok.com/@thetypedtarot" target="_blank" rel="noopener">TikTok · @thetypedtarot</a>
       <a href="https://www.instagram.com/thetypedtarot" target="_blank" rel="noopener">Instagram · @thetypedtarot</a>
     </div>
-    <p class="fine">© 2026 TheTypedTarot ✦ where personality meets prophecy</p>
+    <p class="fine">© 2026 TheTypedTarot ✦ where personality meets pattern</p>
   </div>
 </footer>
 
@@ -586,10 +589,29 @@ const PageHome = () => `
     <div class="wrap">
       <span class="type-label">The Pattern Beneath Method</span>
       <h1 class="wordmark">TheTypedTarot</h1>
-      <div class="tagline-row"><span class="tagline">Where personality meets prophecy</span></div>
-      <p class="position">Tarot and Enneagram guidance for thoughtful women seeking clarity, healing, and intuitive self&#8209;trust.</p>
+      <div class="tagline-row"><span class="tagline">Where personality meets pattern</span></div>
+      <p class="position">Tarot + Enneagram guidance for women who already know the answer and want to trust it.</p>
       <div class="scrap">
         <div class="typed" id="typed" aria-label="the stars do not determine you. they remind you."></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      ${eyebrow("✦ Now Open · Founding Year")}
+      <div class="frame">
+        <h2 class="sig-title">Your 2027 Reading <em>by Enneagram Type</em></h2>
+        <p>A written reading for the year ahead. I pull the cards, read them against your Enneagram type, and show you where your pattern may appear in 2027 and what you can do when it does.</p>
+        <ul class="checks">
+          <li>Five cards on your pattern, each read against your Enneagram type and your goal for 2027</li>
+          <li>One card for each month, with three questions and room to write under each one</li>
+          <li>Your own page, locked with a password, to come back to all year</li>
+        </ul>
+        <p style="margin-top:26px;">$50 for the reading, or $65 with Find Your Enneagram Type: Workbook if you are not sure of your type yet. I am doing 25 readings, and they arrive by the first week of January 2027.</p>
+        <div class="btn-row">
+          <a class="btn btn-amber" href="/2027-reading/">See the 2027 reading</a>
+        </div>
       </div>
     </div>
   </section>
