@@ -46,6 +46,13 @@ details:last-of-type{border-bottom:1px solid var(--line)}
 summary{cursor:pointer;font-weight:600;color:var(--tx-strong)}
 details p{margin:10px 0 0}
 footer{font:12px var(--typed);color:var(--tx-soft);letter-spacing:.06em;text-transform:uppercase;border-top:1px solid var(--line);padding-top:14px;margin-top:48px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.quotes{display:grid;gap:22px;margin:22px 0 0}
+.tquote{margin:0;background:#FBF8F3;border:1px solid var(--line);border-left:3px solid var(--acc);padding:26px 26px 22px;position:relative}
+.tquote .mark{font:600 56px/.5 var(--serif);color:var(--acc);display:block;height:20px}
+.tquote blockquote{margin:0}
+.tquote blockquote p{font:italic 500 21px/1.45 var(--serif);color:var(--tx-strong);margin:0}
+.tquote .disclose{display:block;margin-top:4px;font:italic 15px var(--body);letter-spacing:0;text-transform:none;color:var(--tx)}
+.tquote figcaption{margin-top:16px;font:13px var(--typed);letter-spacing:.14em;text-transform:uppercase;color:var(--tx-strong)}
 @media (max-width:560px){h1{font-size:40px}.note{transform:none}}
 </style>
 </head>
@@ -88,12 +95,21 @@ footer{font:12px var(--typed);color:var(--tx-soft);letter-spacing:.06em;text-tra
     <li><strong>I write back</strong> within two business days with your working type.</li>
   </ol>
 
-  <!-- TESTIMONIALS: add the two testimonials here when they arrive.
   <div class="rule">&#10022;</div>
   <h2>What women are saying</h2>
-  <div class="card moss"><p>"Testimonial one."</p><p class="small">First name or initials</p></div>
-  <div class="card moss"><p>"Testimonial two."</p><p class="small">First name or initials</p></div>
-  -->
+  <div class="quotes">
+    <!-- LISA: to add a testimonial, copy everything from <figure> to </figure>, paste it below the last one, and change the words and name. -->
+    <figure class="tquote">
+      <span class="mark" aria-hidden="true">&ldquo;</span>
+      <blockquote><p>I had my Enneagram number determined by Lisa from The Typed Tarot. She made the process so easy. The questions that were asked of me were truly insightful and made me really think about myself. I fully agree with my results and can't wait to see what cards are pulled and how they correlate with my Enneagram number!</p></blockquote>
+      <figcaption>Amy, Type 2<span class="disclose">Amy received her workbook as a tester.</span></figcaption>
+    </figure>
+    <figure class="tquote">
+      <span class="mark" aria-hidden="true">&ldquo;</span>
+      <blockquote><p>After years of being curious, Lisa at the Typed Tarot helped me determine my enneagram type. There was a super easy survey to take that had very insightful questions. They truly made me pause to reflect and consider the best answer for me. The process was easy and fun and I can't wait to see what comes next in this process!</p></blockquote>
+      <figcaption>Stephanie, Type 2<span class="disclose">Stephanie received her workbook as a tester.</span></figcaption>
+    </figure>
+  </div>
 
   <div class="rule">&#10022;</div>
 
